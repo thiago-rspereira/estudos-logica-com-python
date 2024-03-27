@@ -1,13 +1,21 @@
-#Crie um programa que realize a soma entre dois números
-#Crie um programa que leia uma variável e retorne diversas informações sobre ela
-
+# Programa para realizar a soma entre dois números
 x = 50
 y = 30
 
-a = "Eu sou uma String"
-b = 1.70
+print("Soma de x e y:", x + y)
 
-print("A soma de x e y: ", x + y)
-print("Qual o seu Tipo?", type(a))
-print("Qual o seu Tipo?", type(b))
-print("Qual o seu Tipo?", type(x))
+# Programa para ler uma variável e retornar informações sobre ela
+print("\nAnálise de uma variável:")
+variavel = input("Digite uma variável: ")
+
+print("Tipo da variável:", type(variavel))
+
+# Verificar se a variável pode ser convertida para um número
+if variavel.isnumeric():
+    variavel = int(variavel)
+    print("Conteúdo da variável como número inteiro:", variavel)
+elif variavel.replace('.', '', 1).isdigit():
+    variavel = float(variavel)
+    print("Conteúdo da variável como número de ponto flutuante:", variavel)
+else:
+    print("Conteúdo da variável como string:", variavel)
