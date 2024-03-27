@@ -1,13 +1,10 @@
-#Declaração de variáveis
-#Atribuição de valores
-#Nomes de variáveis(nome, tipo, xp)
-#Reatribuição de valores(xp = xp + 1500)
-#Tipos de dados(Str, Str, Int)
-
+# Declaração e atribuição de valores às variáveis
 nome = "Gandalf"
 tipo = "Mago"
 xp = 1500
 
-xp = xp + 1500
+# Reatribuição de valores a 'xp'
+xp += 1500  # Equivalente a 'xp = xp + 1500'
 
-print("Seu personagem é,", nome,"do tipo, ", tipo,"e xp:", xp)
+# Impressão dos valores das variáveis
+print("Seu personagem é", nome, "do tipo", tipo, "e tem", xp, "pontos de experiência.")
